@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Helphive</title>
+    <meta name="description" content="Helphive Admin Dashboard - Comprehensive platform management">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dashboard">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-small">
+                <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
+                    <path d="M30 5L45 15L45 35L30 45L15 35L15 15L30 5Z" fill="#FFB8A0"/>
+                    <circle cx="30" cy="25" r="8" fill="#1E5F5B"/>
+                </svg>
+                <h2>Helphive</h2>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="admin-dashboard.html" class="nav-item active">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                    <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                    <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                    <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Dashboard</span>
+            </a>
+            
+            <a href="manage-users.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M6 20C6 16.6863 8.68629 14 12 14C15.3137 14 18 16.6863 18 20" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Manage Users</span>
+            </a>
+            
+            <a href="manage-maids.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="15" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+                    <path d="M3 20C3 17.2386 5.23858 15 8 15H10C10.3431 15 10.6797 15.0345 11 15.1013" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 15.1013C14.3203 15.0345 14.6569 15 15 15H17C19.7614 15 22 17.2386 22 20" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Manage Maids</span>
+            </a>
+            
+            <a href="manage-bookings.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="6" width="18" height="15" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 3V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M16 3V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Manage Bookings</span>
+            </a>
+            
+            <a href="manage-payments.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M2 10H22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Manage Payments</span>
+            </a>
+            
+            <a href="manage-complaints.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Handle Complaints</span>
+            </a>
+            
+            <a href="manage-reviews.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Reviews & Ratings</span>
+            </a>
+            
+            <a href="manage-reports.html" class="nav-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 3V21H21" stroke="currentColor" stroke-width="2"/>
+                    <path d="M7 16L12 11L16 15L21 8" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Generate Reports</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="admin.html" class="logout-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="2"/>
+                    <path d="M21 12H9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+    
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Dashboard Overview</h1>
+                <p>Welcome back, Admin</p>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-menu">
+                    <div class="avatar">A</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-icon users">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M6 20C6 16.6863 8.68629 14 12 14C15.3137 14 18 16.6863 18 20" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Total Users</h3>
+                    <p class="stat-number">5,644</p>
+                    <span class="stat-change positive">+12% from last month</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon maids">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="15" cy="8" r="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 20C3 17.2386 5.23858 15 8 15H10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 15H16C18.7614 15 21 17.2386 21 20" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Active Maids</h3>
+                    <p class="stat-number">382</p>
+                    <span class="stat-change positive">+8% from last month</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon bookings">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="6" width="18" height="15" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Total Bookings</h3>
+                    <p class="stat-number">12,847</p>
+                    <span class="stat-change positive">+23% from last month</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon revenue">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Revenue</h3>
+                    <p class="stat-number">₹4.2M</p>
+                    <span class="stat-change positive">+18% from last month</span>
+                </div>
+            </div>
+            
+            <div class="chart-card wide">
+                <h3>Booking Analytics</h3>
+                <div class="chart-placeholder">
+                    <svg width="100%" height="250" viewBox="0 0 600 250">
+                        <polyline 
+                            points="50,200 100,180 150,190 200,150 250,140 300,120 350,100 400,90 450,85 550,70"
+                            fill="none"
+                            stroke="#1E5F5B"
+                            stroke-width="3"
+                        />
+                        <polyline 
+                            points="50,220 100,210 150,215 200,190 250,185 300,170 350,160 400,155 450,150 550,140"
+                            fill="none"
+                            stroke="#FFB8A0"
+                            stroke-width="3"
+                        />
+                    </svg>
+                    <div class="chart-legend">
+                        <span><span class="legend-dot teal"></span>Completed Bookings</span>
+                        <span><span class="legend-dot coral"></span>Pending Bookings</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recent-card">
+                <h3>Recent Bookings</h3>
+                <div class="recent-list">
+                    <div class="recent-item">
+                        <div class="recent-avatar">J</div>
+                        <div class="recent-info">
+                            <h4>John Smith</h4>
+                            <p>House Cleaning - ₹1,200</p>
+                        </div>
+                        <span class="status-badge completed">Completed</span>
+                    </div>
+                    <div class="recent-item">
+                        <div class="recent-avatar">S</div>
+                        <div class="recent-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Cooking Service - ₹800</p>
+                        </div>
+                        <span class="status-badge pending">Pending</span>
+                    </div>
+                    <div class="recent-item">
+                        <div class="recent-avatar">M</div>
+                        <div class="recent-info">
+                            <h4>Michael Brown</h4>
+                            <p>Deep Cleaning - ₹2,500</p>
+                        </div>
+                        <span class="status-badge completed">Completed</span>
+                    </div>
+                    <div class="recent-item">
+                        <div class="recent-avatar">E</div>
+                        <div class="recent-info">
+                            <h4>Emma Davis</h4>
+                            <p>Laundry Service - ₹600</p>
+                        </div>
+                        <span class="status-badge in-progress">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
